@@ -1,0 +1,106 @@
+---
+title: "1.2 Programming in R - Tutorial"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, warning = TRUE)
+```
+
+---
+
+At the end of this tutorial you should be able to:
+
+* Understand how to execute code in an R Markdown file
+* Identify output of executed code
+* Write comments
+* Perform basic math in R
+
+---
+
+## 1.2.2: R Markdown
+
+---
+
+Execute the following line of code and identify the output.
+
+```{r}
+5 - 4
+```
+
+Turn the following line of code into a comment and execute the code. Is there any output? Why or why not?
+
+```{r}
+4 + 2
+```
+
+The following line of cade takes the number of employees at a large research facility at the beginning of 2008, subtracts the number of employees that have left, and adds the number of new hires throughout the year. Add a comment to the blank line above the calculation to explain what the calculation is to someone else who is looking at the code. 
+
+```{r}
+
+1039 - 34 + 67
+```
+
+Write a line of code in the empty code block that takes the number of employees at the research facility at the beginning of 2009 (the number output above) and calculates the number of employees at the beginning of 2010. During 2009, 27 employees left, and there were 32 new hires.
+
+```{r}
+
+```
+
+---
+
+## 1.2.3: Math in R
+
+---
+
+You have a 4 M solution of NaOH. You want to make 150 mL of a 2 M solution. 
+
+Use the following formula to calculate the volume of the intial solution required: 
+
+V1 = (C2 x V2)/C1
+
+C1 - initial concentration (M), V1 - initial volume (mL), C2 - final concentration (M), V2 - final volume (mL)
+
+From this point, all questions in tutorials will be followed by a code block containing the comment "# Write and execute your code here" to indicate that you should write code in the code block below the comment.
+
+```{r}
+# Write and execute your code here
+
+```
+
+Calculate the number of moles in the resulting 2 M NaOH solution. 
+
+Note the volume is in litres (L) in the formula, but the volume you need to use is in mL (150 mL), you will need to include the conversion in your code (150 / 1000).
+
+n = M × V
+
+M - molarity (mol/L), V - volume (L)
+
+```{r}
+# Write and execute your code here
+
+```
+
+NaOH has a molecular weight of 39.997 Daltons (g/mol). Calculate the grams of NaOH in the resulting solution (use the .
+
+m = n x w
+
+n - moles (mol), w - molecular weight (g/mol)
+
+```{r}
+# Write and execute your code here
+
+```
+
+Calculate the number of atoms in the resulting solution n = result of earlier calculation (moles)).
+
+a = n x Avogadro's number
+
+n - moles (mol), Avogadro's number - 6.022 x 10^23 (atoms/mol)
+
+```{r}
+# Write and execute your code here
+
+```
+
+---

@@ -1,0 +1,265 @@
+---
+title: "1.3 Data Types & Variables - Tutorial"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, warning = TRUE)
+
+library(ottr)
+library(testthat)
+```
+
+---
+
+At the end of this tutorial you should be able to:
+
+* Understand the different data types and when to use them
+* Enter values with the correct syntax for each data type
+* Assign values to variables
+* Choose valid and appropriate names for variables
+* Use variables in calculations
+* Overwrite values stored in variables
+
+---
+
+*IMPORTANT NOTE* *READ BEFORE YOU BEGIN THE TUTORIAL*
+Section 1.3.1: Data Types will be cover in 1.3.2: Variables, thus there will be no section for 1.3.1. 
+
+In this tutorial each question will require you to create a variable and assign your answer to it. Completing questions in this way allows us to use an auto grader (called Otter Grader) to give immediate feedback for your answers. 
+
+Here is an example of an auto graded question with a pre-filled answer:
+
+Add the numbers 5 and 6 together and assign it to a variable named "eleven".
+```{r}
+# Write and execute your code here
+eleven <- 5 + 6
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.example.R")
+```
+
+To check if the answer is correct, execute the code in the block with answer to the question (click the small green arrow). Now execute the code block containing the otter grader code. It will output: 
+
+`All tests passed!`
+
+You must execute the code block with the answer in it for the otter grader to work.
+
+Now, try changing the code in the answer block to `eleven <- 3 + 2`. Execute the code block again, and the execute the otter grade code block again. Now it outputs: 
+
+```
+Test Tutorial.W1.3.example - 1 failed:
+
+`eleven` not equal to 11.
+  1/1 mismatches
+  [1] 5 - 11 == -6
+```
+
+As you work through this tutorial and all future tutorials, use the otter grader blocks when available to check your answers as you go.
+
+---
+
+## 1.3.2: Variables
+
+---
+
+A doctor has the following data for a patient.
+
+*Attribute name*  *Attribute value*
+ID:               PD0000467
+Age:              64
+Cancer patient:   true
+Cancer type:      colorectal
+Cancer stage:     1
+In remission:     false
+Doctors note:     Patient complains of "bloating pains". Laparoscopicsurgery scheduled for Oct. 10, 2021.
+
+One at time, choose the correct data type for each patient attribute value and assign the value to the variable name stated to store the value. 
+
+For example, the patient ID value should be saved as a character type value as it contains letters and numbers. We will assign it to a variable named "patient_ID":
+
+```{r}
+patient_ID <- "PD0000467"
+```
+
+Age: 64
+Assign the value to a variable named "patient_age".
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.a.R")
+```
+**Check your answer by running the above block** 
+
+Cancer patient: true
+Assign the value to a variable named "patient_has_cancer".
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.b.R")
+```
+**Check your answer by running the above block** 
+
+Cancer type: colorectal
+Assign the value to a variable named "patient_cancer_type".
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.c.R")
+```
+**Check your answer by running the above block** 
+
+Cancer stage: 1
+Assign the value to a variable named "patient_cancer_stage".
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.d.R")
+```
+**Check your answer by running the above block** 
+
+In remission: false
+Assign the value to a variable named "patient_in_remission".
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.e.R")
+```
+**Check your answer by running the above block** 
+
+Doctors note: Patient complains of "bloating pains". Laparoscopicsurgery scheduled for Oct. 10, 2021.
+Assign the value to a variable named "doctors_note".
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.f.R")
+```
+**Check your answer by running the above block** 
+
+---
+
+The patient comes for an appoint a year later and some of the patient's details have changed. 
+
+For each of the statements below, update the appropriate variable created above so that it contains the up to date value.
+
+The patient is now 65 years old.
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.g.R")
+```
+**Check your answer by running the above block** 
+
+The patient is now in remission.
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.h.R")
+```
+**Check your answer by running the above block** 
+
+---
+
+For the rest of the tutorial we will perform calculations using variables to store values.
+
+A scientist has a 6 M solution of NaOH and needs to make 2 dilutions:
+
+4 M solution (200 mL)
+2 M solution (200 mL)
+
+The formula to determine how much of our 6 M NaOH solution is required for each dilution is: 
+
+V1 = (C2 * V2)/C1
+
+C1 - initial concentration (M), V1 - initial volume (mL), C2 - final concentration (M), V2 - final volume (mL)
+
+For both dilutions, the initial concentration is 6 M. Create a variable named "C1" to store the initial concentration.
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.i.R")
+```
+**Check your answer by running the above block** 
+
+For both dilutions, the final volume is 200 mL. Create a variable named "V2" to store the final volume.
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.j.R")
+```
+**Check your answer by running the above block** 
+
+Calculate the initial volume (V1) required to create a 200 mL 4 M solution of NaOH using the variables `C1` and `V2`. Assign the output to a variable named "V1_4M". 
+Remember: V1 = (C2 * V2)/C1
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.k.R")
+```
+**Check your answer by running the above block** 
+
+Calculate the initial volume (V1) required to create a 200 mL 2 M solution of NaOH using the variables `C1` and `V2`. Assign the output to a variable named "V1_2M". 
+Remember: V1 = (C2 * V2)/C1
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.l.R")
+```
+**Check your answer by running the above block** 
+
+A few days later the scientist runs out of 4 M NaOH, and they need 500 mL of NaOH to complete their experiments. The scientist still has a stock of 6 M NaOH to use for the dilutions. 
+
+The following line of code will be used by the scientist to calculate the initial volume of 6 M NaOH needed to make 500 mL of a 4 M NaOH solution:
+
+    V1_4M_500 <- 4 * V2 / C1
+
+Which variable in the equation needs to be updated? Assign the value to the appropriate variable so that calculation will be correct.
+```{r}
+# Write and execute your code here
+
+```
+
+```{r}
+. = ottr::check("tests/Tutorial.W1.3.2.m.R")
+```
+**Check your answer by running the above block** 
+
+---
