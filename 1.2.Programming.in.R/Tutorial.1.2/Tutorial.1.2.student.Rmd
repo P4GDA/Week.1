@@ -34,7 +34,7 @@ Turn the following line of code into a comment and execute the code. Is there an
 4 + 2
 ```
 
-The following line of cade takes the number of employees at a large research facility at the beginning of 2008, subtracts the number of employees that have left, and adds the number of new hires throughout the year. Add a comment to the blank line above the calculation to explain what the calculation is to someone else who is looking at the code. 
+The following line of code takes the number of employees at a large research facility at the beginning of 2008, subtracts the number of employees that have left, and adds the number of new hires throughout the year. Add a comment to the blank line above the calculation to explain what the calculation is to someone else who is looking at the code. 
 
 ```{r}
 
@@ -55,13 +55,16 @@ Write a line of code in the empty code block that takes the number of employees 
 
 You have a 4 M solution of NaOH. You want to make 150 mL of a 2 M solution. 
 
-Use the following formula to calculate the volume of the intial solution required: 
+Use the following formula to calculate the volume of the initial solution required: 
 
 V1 = (C2 x V2)/C1
 
-C1 - initial concentration (M), V1 - initial volume (mL), C2 - final concentration (M), V2 - final volume (mL)
+C1 is initial concentration (M)
+V1 is initial volume (mL)
+C2 is final concentration (M)
+V2 is final volume (mL)
 
-From this point, all questions in tutorials will be followed by a code block containing the comment "# Write and execute your code here" to indicate that you should write code in the code block below the comment.
+From this point, all questions in tutorials will be followed by a code block containing the comment "# Write and execute your code here" to indicate that you should write code in the code block below the comment, like this:
 
 ```{r}
 # Write and execute your code here
@@ -70,37 +73,69 @@ From this point, all questions in tutorials will be followed by a code block con
 
 Calculate the number of moles in the resulting 2 M NaOH solution. 
 
-Note the volume is in litres (L) in the formula, but the volume you need to use is in mL (150 mL), you will need to include the conversion in your code (150 / 1000).
+Note the volume is in litres (L) in the formula, but the volume you need to use is in mL (150 mL), co you will need to include the conversion in your code (150 / 1000).
 
 n = M × V
 
-M - molarity (mol/L), V - volume (L)
+M is molarity (mol/L)
+V is volume (L)
 
 ```{r}
 # Write and execute your code here
 
 ```
 
-NaOH has a molecular weight of 39.997 Daltons (g/mol). Calculate the grams of NaOH in the resulting solution (use the .
+NaOH has a molecular weight of 39.997 Daltons (g/mol). Calculate the grams of NaOH in the resulting solution (use the number of moles you calculated in the previous question.)
 
 m = n x w
 
-n - moles (mol), w - molecular weight (g/mol)
+n is moles (mol)
+w is molecular weight (g/mol)
 
 ```{r}
 # Write and execute your code here
 
 ```
 
-Calculate the number of atoms in the resulting solution n = result of earlier calculation (moles)).
+Calculate the number of atoms in the resulting solution. (n = result of an earlier calculation (moles)).
 
 a = n x Avogadro's number
 
-n - moles (mol), Avogadro's number - 6.022 x 10^23 (atoms/mol)
+n is moles (mol)
+Avogadro's number is 6.022 x 10^23 (atoms/mol)
 
 ```{r}
 # Write and execute your code here
 
+```
+
+---
+
+What will be the output of the following equation if it is typed into R? Think of the answer before testing in the code block below.
+
+20 - 14 * 2^3 + 2
+
+a) 50
+b) -90
+c) 60
+
+```{r}
+# Write and execute your code here
+
+```
+
+Add brackets to the equation below to make the output equal 9:
+
+```{r}
+# Write and execute your code here
+5 * 2 + 4 / 3 - 1
+```
+
+Change the brackets to now make the output equal 12:
+
+```{r}
+# Write and execute your code here
+5 * 2 + 4 / 3 - 1
 ```
 
 ---

@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE, error = TRUE, warning = TRUE)
 library(ottr)
 library(testthat)
 ```
+**Run the above block to load required packages**
 
 ---
 
@@ -19,7 +20,7 @@ library(testthat)
 This assignment covers the content in week 1 lectures and tutorials. 
 
 #### Mark breakdown
-- Question 1 (5 marks)
+- Question 1 (4 marks)
 - Question 2 (6 marks)
 - Question 4 (6 marks)
 
@@ -103,8 +104,8 @@ The formula for population growth based on doubling time is:
 
 N = No x 2 ^ (t/d)
 
-Where, N is the final population
-       No is the initial population
+Where, N is the size of the final population
+       No is the size of the initial population
        t is the time (in hours)
        d is the doubling time (in hours)
 

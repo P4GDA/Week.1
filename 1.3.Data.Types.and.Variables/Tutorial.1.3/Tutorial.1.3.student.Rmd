@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE, error = TRUE, warning = TRUE)
 library(ottr)
 library(testthat)
 ```
+**Run the above block to load required packages**
 
 ---
 
@@ -74,7 +75,7 @@ Cancer patient:   true
 Cancer type:      colorectal
 Cancer stage:     1
 In remission:     false
-Doctors note:     Patient complains of "bloating pains". Laparoscopicsurgery scheduled for Oct. 10, 2021.
+Doctors note:     Patient complains of "bloating pains". Laparoscopic surgery scheduled for Oct. 10, 2021.
 
 One at time, choose the correct data type for each patient attribute value and assign the value to the variable name stated to store the value. 
 
@@ -144,7 +145,7 @@ Assign the value to a variable named "patient_in_remission".
 ```
 **Check your answer by running the above block** 
 
-Doctors note: Patient complains of "bloating pains". Laparoscopicsurgery scheduled for Oct. 10, 2021.
+Doctors note: Patient complains of "bloating pains". Laparoscopic surgery scheduled for Oct. 10, 2021.
 Assign the value to a variable named "doctors_note".
 ```{r}
 # Write and execute your code here
