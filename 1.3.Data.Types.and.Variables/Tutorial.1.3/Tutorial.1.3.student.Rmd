@@ -32,6 +32,7 @@ In this tutorial each question will require you to create a variable and assign 
 Here is an example of an auto graded question with a pre-filled answer:
 
 Add the numbers 5 and 6 together and assign it to a variable named "eleven".
+
 ```{r}
 # Write and execute your code here
 eleven <- 5 + 6
@@ -87,6 +88,7 @@ patient_ID <- "PD0000467"
 
 Age: 64
 Assign the value to a variable named "patient_age".
+
 ```{r}
 # Write and execute your code here
 
@@ -99,6 +101,7 @@ Assign the value to a variable named "patient_age".
 
 Cancer patient: true
 Assign the value to a variable named "patient_has_cancer".
+
 ```{r}
 # Write and execute your code here
 
@@ -111,6 +114,7 @@ Assign the value to a variable named "patient_has_cancer".
 
 Cancer type: colorectal
 Assign the value to a variable named "patient_cancer_type".
+
 ```{r}
 # Write and execute your code here
 
@@ -123,6 +127,7 @@ Assign the value to a variable named "patient_cancer_type".
 
 Cancer stage: 1
 Assign the value to a variable named "patient_cancer_stage".
+
 ```{r}
 # Write and execute your code here
 
@@ -135,6 +140,7 @@ Assign the value to a variable named "patient_cancer_stage".
 
 In remission: false
 Assign the value to a variable named "patient_in_remission".
+
 ```{r}
 # Write and execute your code here
 
@@ -147,6 +153,7 @@ Assign the value to a variable named "patient_in_remission".
 
 Doctors note: Patient complains of "bloating pains". Laparoscopic surgery scheduled for Oct. 10, 2021.
 Assign the value to a variable named "doctors_note".
+
 ```{r}
 # Write and execute your code here
 
@@ -161,9 +168,10 @@ Assign the value to a variable named "doctors_note".
 
 The patient comes for an appoint a year later and some of the patient's details have changed. 
 
-For each of the statements below, update the appropriate variable created above so that it contains the up to date value.
+For each of the statements below, update the appropriate variable created above so that it contains the up to date value:
 
-The patient is now 65 years old.
+- The patient is now 65 years old.
+
 ```{r}
 # Write and execute your code here
 
@@ -174,7 +182,8 @@ The patient is now 65 years old.
 ```
 **Check your answer by running the above block** 
 
-The patient is now in remission.
+- The patient is now in remission.
+
 ```{r}
 # Write and execute your code here
 
@@ -201,6 +210,7 @@ V1 = (C2 * V2)/C1
 C1 - initial concentration (M), V1 - initial volume (mL), C2 - final concentration (M), V2 - final volume (mL)
 
 For both dilutions, the initial concentration is 6 M. Create a variable named "C1" to store the initial concentration.
+
 ```{r}
 # Write and execute your code here
 
@@ -212,6 +222,7 @@ For both dilutions, the initial concentration is 6 M. Create a variable named "C
 **Check your answer by running the above block** 
 
 For both dilutions, the final volume is 200 mL. Create a variable named "V2" to store the final volume.
+
 ```{r}
 # Write and execute your code here
 
@@ -224,6 +235,7 @@ For both dilutions, the final volume is 200 mL. Create a variable named "V2" to 
 
 Calculate the initial volume (V1) required to create a 200 mL 4 M solution of NaOH using the variables `C1` and `V2`. Assign the output to a variable named "V1_4M". 
 Remember: V1 = (C2 * V2)/C1
+
 ```{r}
 # Write and execute your code here
 
@@ -236,6 +248,7 @@ Remember: V1 = (C2 * V2)/C1
 
 Calculate the initial volume (V1) required to create a 200 mL 2 M solution of NaOH using the variables `C1` and `V2`. Assign the output to a variable named "V1_2M". 
 Remember: V1 = (C2 * V2)/C1
+
 ```{r}
 # Write and execute your code here
 
@@ -253,6 +266,7 @@ The following line of code will be used by the scientist to calculate the initia
     V1_4M_500 <- 4 * V2 / C1
 
 Which variable in the equation needs to be updated? Assign the value to the appropriate variable so that calculation will be correct.
+
 ```{r}
 # Write and execute your code here
 

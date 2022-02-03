@@ -47,6 +47,7 @@ The doubling time of Staphylococcus aureus (S. aureus) grown *in the wild* is: 1
 #### a.
 (1 mark)
 Assign the name of the bacterial species, Staphylococcus aureus, to a variable named "bacterial_species".
+
 ```{r Assignment.W1.1.a}
 # Write and execute your code here
 
@@ -60,6 +61,7 @@ Assign the name of the bacterial species, Staphylococcus aureus, to a variable n
 #### b.
 (1 mark)
 Update the variable `bacterial_species` so that it contains the shorter version of the species name: S. aureus.
+
 ```{r Assignment.W1.1.b}
 # Write and execute your code here
 
@@ -73,6 +75,7 @@ Update the variable `bacterial_species` so that it contains the shorter version 
 #### c.
 (1 mark)
 Assign the doubling time of S. aureus under lab conditions to a variable named "S.aureus_lab_doubling_time".
+
 ```{r Assignment.W1.1.c}
 # Write and execute your code here
 
@@ -86,6 +89,7 @@ Assign the doubling time of S. aureus under lab conditions to a variable named "
 #### d.
 (1 mark)
 Assign the doubling time of S. aureus in the wild to a variable named "S.aureus_wild_doubling_time".
+
 ```{r Assignment.W1.1.d}
 # Write and execute your code here
 
@@ -104,14 +108,16 @@ The formula for population growth based on doubling time is:
 
 N = No x 2 ^ (t/d)
 
-Where, N is the size of the final population
-       No is the size of the initial population
-       t is the time (in hours)
-       d is the doubling time (in hours)
+Where:
+- N is the size of the final population
+- No is the size of the initial population
+- t is the time (in hours)
+- d is the doubling time (in hours)
 
 #### a.
 (2 marks)
 A colony of S. aureus with a population of 100 is grown in the *lab*. What is the population size after 2 hours? Assign the final population size to a variable named "S.aureus_lab_population".
+
 ```{r Assignment.W1.2.a}
 # Write and execute your code here
 
@@ -125,6 +131,7 @@ A colony of S. aureus with a population of 100 is grown in the *lab*. What is th
 #### b.
 (2 marks)
 A colony of S. aureus with a population of 100 is grown in the *wild*. What is the population size after 2 hours? Assign the final population size to a variable named "S.aureus_wild_population".
+
 ```{r Assignment.W1.2.b}
 # Write and execute your code here
 
@@ -138,6 +145,7 @@ A colony of S. aureus with a population of 100 is grown in the *wild*. What is t
 #### c. 
 (2 marks)
 Using the results from 2.a and 2.b, how many *times more* S. aureus are there in the lab grown population compared to the wild grown population after 2 hours of growth? Assign the result of the calculation to a variable named "S.aureus_lab_over_wild".
+
 ```{r Assignment.W1.2.c}
 # Write and execute your code here
 
@@ -156,7 +164,8 @@ Assign a logical value to the specified variable name to indicate if the stateme
 
 #### a. 
 (1 mark)
-Character type values cannot contain numbers. Answer by assigning a logical value to a variable called "q.3.a".
+True or False: Character type values cannot contain numbers. Answer by assigning a logical value to a variable called "q.3.a".
+
 ```{r Assignment.W1.3.a}
 # Write and execute your code here
 
@@ -169,11 +178,12 @@ Character type values cannot contain numbers. Answer by assigning a logical valu
 
 #### b.
 (1 mark)
-If the following piece of code was executed it would throw an error:
+True or False: If the following piece of code was executed it would throw an error:
 
     sample_description <- "S. aureus was grown on the plate labelled "SA sample 3""
     
 Answer by assigning a logical value to a variable called "q.3.b".
+
 ```{r Assignment.W1.3.b}
 # Write and execute your code here
 
@@ -186,7 +196,8 @@ Answer by assigning a logical value to a variable called "q.3.b".
 
 #### c. 
 (1 mark)
-It doesn't matter whether you use capital letters when you type out a logical value. Answer by assigning a logical value to a variable called "q.3.c".
+True or False: It doesn't matter whether you use capital letters when you type out a logical value. Answer by assigning a logical value to a variable called "q.3.c".
+
 ```{r Assignment.W1.3.c}
 # Write and execute your code here
 
@@ -199,7 +210,8 @@ It doesn't matter whether you use capital letters when you type out a logical va
 
 #### d. 
 (1 mark)
-You can include the letter e in numeric values. Answer by assigning a logical value to a variable called "q.3.d".
+True or False: You can include the letter e in numeric values. Answer by assigning a logical value to a variable called "q.3.d".
+
 ```{r Assignment.W1.3.d}
 # Write and execute your code here
 
@@ -212,7 +224,8 @@ You can include the letter e in numeric values. Answer by assigning a logical va
 
 #### e. 
 (1 mark)
-When choosing a variable name, it is better to use names like "bacterial_species" and "S.aureus_lab_doubling_time" instead of "b_sp" and "S.a_lab_time". Answer by assigning a logical value to a variable called "q.3.e".
+True or False: When choosing a variable name, it is better to use names like "bacterial_species" and "S.aureus_lab_doubling_time" instead of "b_sp" and "S.a_lab_time". Answer by assigning a logical value to a variable called "q.3.e".
+
 ```{r Assignment.W1.3.e}
 # Write and execute your code here
 
@@ -225,11 +238,12 @@ When choosing a variable name, it is better to use names like "bacterial_species
 
 #### f.
 (1 mark)
-If the following line of code was executed it would throw an error:
+True or False: If the following line of code was executed it would throw an error:
 
     1st.name <- "James"
     
 Answer by assigning a logical value to a variable called "q.3.f".
+
 ```{r Assignment.W1.3.f}
 # Write and execute your code here
 
@@ -239,3 +253,5 @@ Answer by assigning a logical value to a variable called "q.3.f".
 . = ottr::check("tests/Assignment.W1.3.f.R")
 ```
 **IGNORE the above block: test results will not appear in assignments** 
+
+---
