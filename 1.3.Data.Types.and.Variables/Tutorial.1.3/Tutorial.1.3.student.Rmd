@@ -25,7 +25,7 @@ At the end of this tutorial you should be able to:
 ---
 
 *IMPORTANT NOTE* *READ BEFORE YOU BEGIN THE TUTORIAL*
-Section 1.3.1: Data Types will be cover in 1.3.2: Variables, thus there will be no section for 1.3.1. 
+Unlike the prior tutorial (1.2) and all following tutorials, this tutorial will not be broken into sections based on the lecture videos. Instead all sections (1.3.1: Data Types (Character), 1.3.2 Data Types (Numeric & Logical), 1.3.3: Variables, and 1.3.4 Variable Names) will be covered together. 
 
 In this tutorial each question will require you to create a variable and assign your answer to it. Completing questions in this way allows us to use an auto grader (called Otter Grader) to give immediate feedback for your answers. 
 
@@ -63,7 +63,7 @@ As you work through this tutorial and all future tutorials, use the otter grader
 
 ---
 
-## 1.3.2: Variables
+## 1.3: Variables & Data Types
 
 ---
 
@@ -166,7 +166,7 @@ Assign the value to a variable named "doctors_note".
 
 ---
 
-The patient comes for an appoint a year later and some of the patient's details have changed. 
+The patient comes for an appointment a year later and some of the patient's details have changed. 
 
 For each of the statements below, update the appropriate variable created above so that it contains the up to date value:
 
