@@ -24,6 +24,15 @@ This assignment covers the content in week 1 lectures and tutorials.
 - Question 2 (6 marks)
 - Question 4 (6 marks)
 
+Note that when a question asks you to assign a value to a variable, you must use the exact variable name to get the marks for the question. The question will provide the variable name in quotation marks, although the variable in your code should not have quotation marks around it. For example, view the following and question and answer:
+
+Assign the result of the calculation 1 + 1 to a variable named "q.9".
+
+```{r}
+# Write and execute your code here
+q.9 <- 1 + 1
+```
+
 ---
 
 ## Background
