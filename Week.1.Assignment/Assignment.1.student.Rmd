@@ -22,7 +22,7 @@ This assignment covers the content in week 1 lectures and tutorials.
 #### Mark breakdown
 - Question 1 (4 marks)
 - Question 2 (6 marks)
-- Question 4 (6 marks)
+- Question 3 (6 marks)
 
 Note that when a question asks you to assign a value to a variable, you must use the exact variable name to get the marks for the question. The question will provide the variable name in quotation marks, although the variable in your code should not have quotation marks around it. For example, view the following and question and answer:
 
@@ -173,7 +173,7 @@ Assign a logical value to the specified variable name to indicate if the stateme
 
 #### a. 
 (1 mark)
-True or False: Character type values cannot contain numbers. Answer by assigning a logical value to a variable called "q.3.a".
+True or False: Character type values cannot contain numbers. Answer by assigning a logical value to a variable named "q.3.a".
 
 ```{r Assignment.W1.3.a}
 # Write and execute your code here
@@ -191,7 +191,7 @@ True or False: If the following piece of code was executed it would throw an err
 
     sample_description <- "S. aureus was grown on the plate labelled "SA sample 3""
     
-Answer by assigning a logical value to a variable called "q.3.b".
+Answer by assigning a logical value to a variable named "q.3.b".
 
 ```{r Assignment.W1.3.b}
 # Write and execute your code here
@@ -205,7 +205,7 @@ Answer by assigning a logical value to a variable called "q.3.b".
 
 #### c. 
 (1 mark)
-True or False: It doesn't matter whether you use capital letters when you type out a logical value. Answer by assigning a logical value to a variable called "q.3.c".
+True or False: It doesn't matter whether you use capital letters when you type out a logical value. Answer by assigning a logical value to a variable named "q.3.c".
 
 ```{r Assignment.W1.3.c}
 # Write and execute your code here
@@ -219,7 +219,7 @@ True or False: It doesn't matter whether you use capital letters when you type o
 
 #### d. 
 (1 mark)
-True or False: You can include the letter e in numeric values. Answer by assigning a logical value to a variable called "q.3.d".
+True or False: You can include the letter e in numeric values. Answer by assigning a logical value to a variable named "q.3.d".
 
 ```{r Assignment.W1.3.d}
 # Write and execute your code here
@@ -233,7 +233,7 @@ True or False: You can include the letter e in numeric values. Answer by assigni
 
 #### e. 
 (1 mark)
-True or False: When choosing a variable name, it is better to use names like "bacterial_species" and "S.aureus_lab_doubling_time" instead of "b_sp" and "S.a_lab_time". Answer by assigning a logical value to a variable called "q.3.e".
+True or False: When choosing a variable name, it is better to use names like "bacterial_species" and "S.aureus_lab_doubling_time" instead of "b_sp" and "S.a_lab_time". Answer by assigning a logical value to a variable named "q.3.e".
 
 ```{r Assignment.W1.3.e}
 # Write and execute your code here
@@ -251,7 +251,7 @@ True or False: If the following line of code was executed it would throw an erro
 
     1st.name <- "James"
     
-Answer by assigning a logical value to a variable called "q.3.f".
+Answer by assigning a logical value to a variable named "q.3.f".
 
 ```{r Assignment.W1.3.f}
 # Write and execute your code here

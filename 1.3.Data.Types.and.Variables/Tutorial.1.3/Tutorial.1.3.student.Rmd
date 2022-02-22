@@ -25,7 +25,7 @@ At the end of this tutorial you should be able to:
 ---
 
 *IMPORTANT NOTE* *READ BEFORE YOU BEGIN THE TUTORIAL*
-Unlike the prior tutorial (1.2) and all following tutorials, this tutorial will not be broken into sections based on the lecture videos. Instead all sections (1.3.1: Data Types (Character), 1.3.2 Data Types (Numeric & Logical), 1.3.3: Variables, and 1.3.4 Variable Names) will be covered together. 
+Unlike the prior tutorial (1.2) and all following tutorials, this tutorial will not be broken into sections based on the lecture videos. Instead, all sections (1.3.1: Data Types (Character), 1.3.2 Data Types (Numeric & Logical), 1.3.3: Variables, and 1.3.4 Variable Names) will be covered together. 
 
 In this tutorial each question will require you to create a variable and assign your answer to it. Completing questions in this way allows us to use an auto grader (called Otter Grader) to give immediate feedback for your answers. 
 
@@ -42,14 +42,15 @@ eleven <- 5 + 6
 ```{r}
 . = ottr::check("tests/Tutorial.W1.3.example.R")
 ```
+**Check your answer by running the above block** 
 
-To check if the answer is correct, execute the code in the block with answer to the question (click the small green arrow). Now execute the code block containing the otter grader code. It will output: 
+To check if the answer is correct, execute the code in the block with the answer to the question (click the small green arrow). Now execute the code block containing the otter grader code. It will output: 
 
 `All tests passed!`
 
 You must execute the code block with the answer in it for the otter grader to work.
 
-Now, try changing the code in the answer block to `eleven <- 3 + 2`. Execute the code block again, and the execute the otter grade code block again. Now it outputs: 
+Now, try changing the code in the answer block to `eleven <- 3 + 2`. Execute the code block again, and then execute the otter grade code block again. Now it outputs: 
 
 ```
 Test Tutorial.W1.3.example - 1 failed:
@@ -63,7 +64,7 @@ As you work through this tutorial and all future tutorials, use the otter grader
 
 ---
 
-## 1.3: Variables & Data Types
+## 1.3.2: Variables & Data Types
 
 ---
 
@@ -168,7 +169,7 @@ Assign the value to a variable named "doctors_note".
 
 The patient comes for an appointment a year later and some of the patient's details have changed. 
 
-For each of the statements below, update the appropriate variable created above so that it contains the up to date value:
+For each of the statements below, update the appropriate variable created above so that it contains the up-to-date value:
 
 - The patient is now 65 years old.
 
@@ -207,9 +208,13 @@ The formula to determine how much of our 6 M NaOH solution is required for each 
 
 V1 = (C2 * V2)/C1
 
-C1 - initial concentration (M), V1 - initial volume (mL), C2 - final concentration (M), V2 - final volume (mL)
+Where:
+- C1 is the initial concentration (M)
+- V1 is the initial volume (mL)
+- C2 is the final concentration (M)
+- V2 is the final volume (mL)
 
-For both dilutions, the initial concentration is 6 M. Create a variable named "C1" to store the initial concentration.
+For both dilutions, the initial concentration is 6 M. Create a variable named "C1" to store the initial concentration. Do not include the units when making this variable or any of the remaining variables.
 
 ```{r}
 # Write and execute your code here
