@@ -1,1 +1,196 @@
-placeholder
+---
+title: "1.2 Programming in R"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, warning = TRUE)
+```
+
+---
+
+## 1.2.1 JupyterHub & RStudio
+
+---
+
+The R programming language can be used in multiple different applications. In this course, we will use RStudio. RStudio provides a graphical interface in which to write R code and view the output. You should be reading this file from within the RStudio application on JupyterHub. 
+
+Files will be in the top left hand side of the RStudio interface. Other sections of the RStudio interface ("Environment", "Help", etc.) will be explained throughout the course. Files can be opened by clicking the "File" menu and then selecting "Open File...". Files can be saved with the save button or with the "Save" option in the "File" menu.
+
+Further information and instructions for using Rstudio in JupyterHub can found in the Week 0 module on Quercus.
+
+---
+
+## 1.2.2 R Markdown
+
+---
+
+### R Markdown Format
+
+This supplementary file, and most other supplementary files, tutorials, and assignments in this course are written in R Markdown. There are multiple file types in which you can write and save R code, this is just one of them. R markdown allows you to include written portions that are not code (like this!) as well as "code chunks" in which R can be written and executed. R Markdown files have the extension ".Rmd". This file, for example, is named "Supplement.1.2.Rmd". 
+
+R Markdown files have a "Document Outline" which can be viewed by clicking the icon that contains 5 horizontal lines, at the top right hand side of this file. If you click on the icon you will see the sections of this R Markdown File. By clicking on one of the titles, you can jump to that section.
+
+R code is written in R Markdown files using code chunks. Code chunks are preceded by three back ticks and a lowercase "r" in curly braces, and followed by three back ticks. Below is a code chunk that contains the R code "1 + 1".
+
+```{r}
+1 + 1
+```
+
+Click on the green right pointing arrow at the right side of the code chunk to *execute* (run) the code in the block.
+
+You should now see "[1] 2" below the code chunk. This is the *output* of the code chunk, showing what the code *returns*. 
+
+How do we interpret the output? In R, the output value appears to the right of a number in square brackets. Here, the [1] indicates that this is the first value that is returned (in this case, the number 2). For the first two weeks of this course, all of the code that is executed will only return one value. In week 3 we will learn about working with multiple values at once. Therefore, until week 3 all of the output you generate will start with "[1]", which can be ignored for now.
+
+Throughout these lecture supplements you will find written portions mixed with code chunks. Execute the code chunks as you go through the tutorials to follow along. 
+
+**Formatting notes:**
+
+* Sections of the supplement are broken up by three hyphens (---)
+* Each lecture video will have a corresponding section
+* Each major topic within a video will have subsection
+* Anything outside of a code chunk contained with back ticks (``) is intended to represent code. For example:
+      `1 + 1`
+
+---
+
+### Code Chunks & Comments 
+
+Multiple lines of code can be placed into a single code chunk. One line of output will be returned for each line of code executed.
+
+Execute the code using the green arrow to see the output.
+
+```{r}
+1 + 1
+2 + 2
+3 + 3
+4 + 4
+```
+
+The button to the left of the green arrow (gray arrow pointing down to green rectangle) runs all prior code chunks in the file. 
+
+To see how this works, click on the "X" to the right of the output above to clear it. Then click the button to left of the green arrow in code chunk below:
+
+```{r}
+10 + 2
+```
+
+The code chunk above (1 + 1, 2 + 2, etc.) was executed again and the values were printed in the output.
+
+When the green arrow for a code chunk is clicked, all the code inside will be executed. The only exception is if part of the code is preceded by a hashtag (#). Anything that comes after a hashtag is a *comment* and will be ignored by R. Comments are annotations in code that are used to provide information about the code and are not executed. In Rstudio, comments will be in a green font. For example:
+
+```{r}
+# 1 + 1
+```
+
+When you execute the code above (click the green arrow) nothing happens. 
+
+Comments are often used to describe what the code in the following line (or lines) is going to do. This is very useful when you have many lines of code and you want to be able to go back later and remember what the code is for.
+
+```{r}
+# Add one plus one
+1 + 1
+```
+
+You can also add comments at the end of a line of code without altering the way the code is executed.
+
+```{r}
+# Add one plus one
+1 + 1 # We can also put a comment here
+```
+
+What do you expect the return value(s) will be for the next code chunk?
+
+```{r}
+# 3 + 3
+1 + 1 # + 2
+```
+
+Of course, this would be different if we removed all the #:
+
+```{r}
+3 + 3
+1 + 1 + 2
+```
+
+---
+
+## 1.2.3 Math in R
+
+---
+
+### Mathematical Operators in R
+
+One of the simplest ways to use R is as a calculator. These are symbols for the basic mathematical operators:
+
+addition:          +
+subtraction:       -
+multiplication:    *
+division:          /
+exponentiation:    ^
+
+---
+
+### Operator Precedence
+
+In R, just like in regular math, certain parts of an equation are calculated (executed) before others. You have probably learned one of the following mnemonics to remember the order of operations: BEDMAS, PEMDAS, BODMAS, etc. The order of operations is also called *operator precedence*. If X has a *higher precedence* than Y, then X is executed first. 
+
+*Highest precedence
+  Brackets/parentheses:         `()`
+  Exponents:                    `^`
+  Multiplication & division:    `*` & `/`
+  Addition & subtraction:       `+` & `-`
+*Lowest precedence
+
+Multiplication takes precedence over addition. Therefore, the calculation below will return the number 14.      4 + 2 * 5 = 4 + 10 = 14
+
+```{r}
+4 + 2 * 5
+```
+
+If two operators have the same precedence, they will be executed in order from left to right. Let's look at the following code and trace the order in which each part is executed:
+
+```{r}
+10 - 2 + 100
+```
+
+`10 - 2` is executed first, returning 8 and then `8 + 100` is executed, returning 108.
+
+If we wanted to subtract 102 from 10 instead, we would need to add brackets:
+
+```{r}
+10 - (2 + 100)
+```
+
+If you were using the following formula:
+
+a / bc     where a = 100, b = 2, c = 5
+
+You might type in your calculation like this:
+
+```{r}
+100 / 2 * 5
+```
+
+However, this executes the division before the calculation because the division operator is the leftmost operator at that level of precedence. By adding brackets around the multiplication, we can perform the correct calculation.
+
+```{r}
+100 / (2 * 5)
+```
+
+Make sure to double check your calculations so that the code you write will be executed in the order you intend.
+
+Mathematical operators within exponents require brackets. For exmaple, calculate the result of *a* to the power of *b* divided by *c*, where *a* = 100, *b* = 2, *c* = 5. 
+
+b/c must be placed within brackets so that R will execute the division before the exponentiation (which has a higher precedence). If we do not use brackets, we get a different answer. 
+
+```{r}
+100 ^ 2 / 5
+```
+
+```{r}
+100 ^ (2 / 5)
+```
+
+---
