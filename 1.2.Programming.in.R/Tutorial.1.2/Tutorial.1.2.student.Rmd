@@ -18,6 +18,11 @@ At the end of this tutorial you should be able to:
 
 ---
 
+*IMPORTANT NOTE*
+You will not receive automatic feedback on this tutorial. If you are unsure of how to write any of the tutorial commands, please refer to the lecture supplement. All subsequent tutorials provided in R Markdown will have automatic feedback provided by Otter Grader.
+
+---
+
 ## 1.2.2: R Markdown
 
 ---
