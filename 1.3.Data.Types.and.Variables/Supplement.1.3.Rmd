@@ -18,10 +18,9 @@ knitr::opts_chunk$set(echo = TRUE, error = TRUE, warning = TRUE)
 A *data type* is an attribute that classifies a piece of data. Different data types can have different values.
 
 There are 3 main data types in R:
-
-- Character type	(used for text)
-- Numeric type	(used for numbers)
-- Logical type	(used for true and false values)
+* Character type	(used for text)
+* Numeric type	(used for numbers)
+* Logical type	(used for true and false values)
 
 There are three other types, but they are used rarely and we will not be learning them in this course.
 
@@ -36,11 +35,11 @@ Each data type has its own uses and syntax, which will be explored individually.
 Character type values are text values. Words, phrases, and sentences in R are character type.
 
 Character type values can contain:
-- Letters
-- Numbers
-- Spaces
-- Punctuation marks
-- Other symbols on your keyboard: $, %, #, *, ~, etc.
+* Letters
+* Numbers
+* Spaces
+* Punctuation marks
+* Other symbols on your keyboard: $, %, #, *, ~, etc.
 
 Character type values must always be enclosed in double quotation marks "". 
 
@@ -56,7 +55,7 @@ What would happen if we had typed hello without quotation marks?
 hello
 ```
 
-The code *throws* an *error*. Errors are "thrown" whenever R cannot interpret and execute the code. When an error is thrown, an *error message* is also output. In this error message it states that the object 'hello' is not found, it saw the word hello and did not know how to interpret it.
+The code *throws* an *error*. Errors are "thrown" whenever R cannot interpret and execute the code. When an error is thrown, an *error message* is also output. In this error message it states that the object 'hello' is not found: it saw the word hello and did not know how to interpret it.
 
 R code is read and executed by the R *interpreter*, a program that reads and executes code written in a programming language (in this case, R). When the interpreter cannot execute the code it throws an error. When hello is executed without quotation marks, the interpreter does not know what the word represents and throws an error.
 
@@ -70,7 +69,7 @@ Let's run it to see what happens.
 "Sample label: "EGH1""
 ```
 
-In this error message it states it saw an "unexpected symbol", in this case it saw the word EGH1 and did not know how to interpret it. 
+In this error message it states it saw an "unexpected symbol". In this case it saw the word EGH1 and did not know how to interpret it. 
 
 If we look at the back at the code, we can see that because of the use of double quotation marks two times, there are actually two character type values:
   "Sample label: " and "" with the uninterpretable word EGH1 in the middle.
@@ -84,10 +83,10 @@ Instead we can use single quotations within the double quotations of the charact
 
 Character values are used for all text values in R. Here are a few examples of character value uses in bioinformatic analysis:
 
-- Sample descriptions   `“EGH1 deletion mutant”`
-- Cell types            `“HEK293”`
-- Gene names            `“TP53”`
-- Patient cancer type   `“pancreatic, stage III”`
+* Sample descriptions   `“EGH1 deletion mutant”`
+* Cell types            `“HEK293”`
+* Gene names            `“TP53”`
+* Patient cancer type   `“pancreatic, stage III”`
 
 ---
 
@@ -100,30 +99,32 @@ Character values are used for all text values in R. Here are a few examples of c
 Numeric type values (also referred to as "double" type) are real numbers. 
 
 Numeric type values can contain:
-- Numbers: 0-9
-- A single period to indicate a decimal point
-- A single hyphen at the front to indicate a negative number
-- The letter “e” to indicate “10 to the power of”
+* Numbers: 0-9
+* A single period to indicate a decimal point
+* A single hyphen at the front to indicate a negative number
+* The letter “e” and a "+" sign to indicate “10 to the power of”
 
 This is the type of value we were using in the math portion of the 1.2 module. Let's look at a few more examples.
+
+Whole number:
 
 ```{r}
 1067
 ```
 
-Floating point numbers.
+Floating point number (with a decimal point):
 
 ```{r}
 99.99999
 ```
 
-Negative numbers.
+Negative number:
 
 ```{r}
 -193830
 ```
 
-Scientific e notation. (This is Avogadro's number: 6.022 x 10^23)
+Scientific e notation (this is Avogadro's number: 6.022 x 10^23):
 
 ```{r}
 6.022e+23
@@ -135,7 +136,7 @@ What would happen if we put a number inside quotation marks?
 "-193830"
 ```
 
-Is it still numeric type? No it is character type. This can be seen in the ouput as the value is contained in double quotation marks. Remember that character type values can contain numbers, and all values put inside quotation marks are interpreted as character type values.
+Is it still numeric type? No, it is character type. This can be seen in the output as the value is contained in double quotation marks. Remember that character type values can contain numbers, and all values put inside quotation marks are interpreted as character type values.
 
 ```{r}
 "-193830" + 1067
@@ -147,12 +148,12 @@ Although the code in the previous code chunk throws an error, there were no warn
 
 Numeric values have numerous applications in bioinformatic analysis. Any number resulting from an analysis will be used as a numeric value in R. Here are a few examples:
 
-- Concentrations            `10 # mol/L`
-- Population growth rate    `0.237 # per year`
-- Gene expression level     `39.01 # TPM`
-- Patient age               `89 # years old`
+* Concentrations            `10 # mol/L`
+* Population growth rate    `0.237 # per year`
+* Gene expression level     `39.01 # TPM`
+* Patient age               `89 # years old`
 
-Note that the units of each numeric type value were shown as a comment after the value. Units cannot be stored within a value, however a comment after the value with the units can be useful reminder when reviewing code.
+Note that the units of each numeric type value were shown as a comment after the value. Units cannot be stored within a value, however a comment after the value with the units can be a useful reminder when reviewing code.
 
 ---
 
@@ -179,7 +180,7 @@ What happens if we do not write the values in capital letters?
 True
 ```
 
-Another error message. This one is telling us that R cannot inpret the value True. R cannot interpret True, true, False, or false. It can only interpret the values as capitalized TRUE and FALSE. In this course, code will always been shown with logical values `TRUE` or `FALSE`, however, there is one other R interpretable representation of these values: `T` and `F`:
+Another error message. This one is telling us that R cannot interpret the value True. R cannot interpret True, true, False, or false. It can only interpret the values as capitalized TRUE and FALSE. In this course, code will always be shown with logical values `TRUE` or `FALSE`. There is, however, one other R interpretable representation of these values: `T` and `F`:
 
 ```{r}
 T
@@ -193,10 +194,10 @@ Note, however, that the output of `T` and `F` are `TRUE` and `FALSE`.
 
 Logical type values may not seem particularly useful now, but we will learn more about their uses next week in modules 2.2 and 2.3. Logical values are used in binary situations. Some examples of binary situations you may encounter in bioinformatics include:
 
-- Mouse sex (male/female)
-- Test positivity (pass/fail)
-- Protein interactions (interact/don't interact)
-- Patient in remission (yes/no)
+* Mouse sex (male/female)
+* Test positivity (pass/fail)
+* Protein interactions (interact/don't interact)
+* Patient in remission (yes/no)
 
 ---
 
@@ -208,7 +209,7 @@ Logical type values may not seem particularly useful now, but we will learn more
 
 *Variables* in R can be used to store values of any type. Let's start by looking at an example. 
 
-To calculate the number of atoms are in 6 moles of water, Avogadro's constant (6.022×10^23 atoms/mol) is used:
+To calculate the number of atoms that are in 6 moles of water, Avogadro's constant (6.022×10^23 atoms/mol) is used:
 
 atoms = moles * Avogadro's constant
 
@@ -230,7 +231,7 @@ Instead, you can *assign* the numeric value of Avogadro's constant to a variable
 
 When a value is assigned to a variable in R, it becomes part of the *R environment*. The R environment keeps track of objects, including variables. When R sees the variable, it can access the value stored in it from the environment. In other words, the variable can be *interpreted* by R.
 
-The assignment operator in R is a less than sign follwed by a hyphen: `<-`. The syntax for assigning a value to a variable is:
+The assignment operator in R is a less than sign followed by a hyphen: `<-`. The syntax for assigning a value to a variable is:
 
     variable <- value
 
@@ -254,19 +255,19 @@ The variable `avogadros_constant` is now equivalent to the numeric value 6.022e+
 
 ### Using Variables
 
-Let's find the number of atoms in 6 moles of water again. Instead of typing out Avogadro's constant, we will replace the numeric value with the variable `avogadros_constant`.
+Let's find the number of atoms in 6 moles of water again. Instead of typing out Avogadro's constant, we will replace the numeric value with the variable `avogadros_constant`:
 
 ```{r}
 6 * avogadros_constant
 ```
 
-We can use the variable again to calculate the number of atoms in 2.25 moles of NaOH.
+We can use the variable again to calculate the number of atoms in 2.25 moles of NaOH:
 
 ```{r}
 2.25 * avogadros_constant
 ```
 
-And to calculate the number of atoms in 10 moles of KCl. 
+And to calculate the number of atoms in 10 moles of KCl:
 
 ```{r}
 10 * avogadros_constant
@@ -279,7 +280,7 @@ atoms_in_Ni <- 4.3 * avogadros_constant
 atoms_in_Ni
 ```
 
-Notice that we put a second line of code directly after the assignment to output the value that was stored in the variable.
+Notice that we put a second line of code directly after the assignment to output the value that was stored in the new variable.
 
 ---
 
@@ -324,20 +325,19 @@ You might have noticed two things about variable names in the previous examples:
   1. Although they contain letters, like character type values, variable names do not have quotation marks around them.
   2. Variable names do not contain spaces.
   
-Variable names cannot have quotation marks or spaces, they must only include:
-
-- letters
-- numbers
-- underscores
-- periods
+Variable names cannot have quotation marks or spaces. They must only include:
+* letters
+* numbers
+* underscores
+* periods
 
 Variable names *cannot*:
-- Contain spaces or any special characters
-- Start with a number, underscore, or a period followed by a number
+* Contain spaces or any special characters
+* Start with a number, underscore, or a period followed by a number
 
 Because of this, it is best to always start your variable name with a letter so that you know it will be valid.
 
-Here is an example of invalid variable name.
+Here is an example of an invalid variable name:
 
 ```{r}
 2021_number_of_new_patients <- 129
@@ -346,13 +346,12 @@ Here is an example of invalid variable name.
 If you use an invalid variable name, R will throw an error to let you know, and depending on what mistake you are making it will warn you about it before execution, as above.
 
 Instead, you could name the variable:
+* number_of_new_patients_2021
+* num_new_patients_2021
+* NewPatientsCount2021
+* new.patients.2021
 
-- number_of_new_patients_2021
-- num_new_patients_2021
-- NewPatientsCount2021
-- new.patients.2021
-
-There are many other valid names, these are just a few examples.
+There are many other valid names; these are just a few examples.
 
 Note that when we use multiple words in our variable name, we can improve readability by adding a *delimiter* between each word because spaces cannot be used.
 
@@ -364,17 +363,16 @@ Or we can use uppercase letters to differentiate between words:
 Camel case: `numNewPatients2021`
 Upper camel case: `NumNewPatients2021`
 
-It is important to be descriptive when creating variable names so that we can remember later what the value represents, or, so that someone else can understand your code. 
+It is important to be descriptive when creating variable names so that we can remember later what the value represents, or so that someone else can understand your code. 
 
 Note that when you looked the variable names above, even though you were never told what it was supposed to represent, you probably realized that the value stored in the variable represents that there were 129 new patients in 2021.
 
 Here are a few examples of names for the variable that would not have been easy to figure out:
-
-- np2021
-- new_p_2021
-- n_patient_21
-- patients_21
-- newpat21
+* np2021
+* new_p_2021
+* n_patient_21
+* patients_21
+* newpat21
 
 Although these are bad names for human readability, they are not invalid variable names (no spaces or special characters, and they all start with a letter). So R would not throw an error if you used one of these names. Choosing a good variable name is important for the user.
 
@@ -382,20 +380,20 @@ Although these are bad names for human readability, they are not invalid variabl
 
 ### The RStudio Environment Tab
 
-At this point you may have noticed some data popping up to the right of this markdown file under the "Environment" tab in the top right corner of the RStudio interface. Whenever a new variable is created, the variable name the value are added to the "Global Environment". If you have run all the code chunks in this file so far you should see the following variables along with their values in the Environment tab:
+At this point you may have noticed some data popping up to the right of this markdown file under the "Environment" tab in the top right corner of the RStudio interface. Whenever a new variable is created, the variable name and the value are added to the "Global Environment". If you have run all the code chunks in this file so far you should see the following variables along with their values in the Environment tab:
 
     atoms_in_Ni             2.58946e+24
     avogadros_constant      6.022e+23
     patient_ID              "PID0000012"
     patient_iron_low        FALSE
     
-You can save your environment, also called your *workspace* using the save icon in the environment tab, and you can load a saved environment using the icon to the left of the save button. If you want to clear (i.e. delete) all the variables in your environment, use the button with the broom icon.
+You can save your environment, also called your *workspace*, using the save icon in the environment tab, and you can load a saved environment using the icon to the left of the save button. If you want to clear (i.e., delete) all the variables in your environment, use the button with the broom icon.
 
 ---
 
 ### Overwriting Existing Variables
 
-Earlier we assigned the logical value `FALSE` to the variable `patient_iron_low`.
+Earlier we assigned the logical value `FALSE` to the variable `patient_iron_low`:
 
 ```{r}
 patient_iron_low 
@@ -403,7 +401,7 @@ patient_iron_low
 
 If the patient returns to the doctor for a blood test and the doctor finds that the patient now has low iron levels, the variable can be *overwritten*, or in other words, edited.
 
-We can overwrite the value of `patient_iron_low` from `FALSE` to `TRUE` by simply assigning the value `TRUE` to the same variable name.
+We can overwrite the value of `patient_iron_low` from `FALSE` to `TRUE` by assigning the value `TRUE` to the same variable name:
 
 ```{r}
 patient_iron_low <- TRUE

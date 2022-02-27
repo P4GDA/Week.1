@@ -17,7 +17,7 @@ The R programming language can be used in multiple different applications. In th
 
 Files will be in the top left hand side of the RStudio interface. Other sections of the RStudio interface ("Environment", "Help", etc.) will be explained throughout the course. Files can be opened by clicking the "File" menu and then selecting "Open File...". Files can be saved with the save button or with the "Save" option in the "File" menu.
 
-Further information and instructions for using Rstudio in JupyterHub can found in the Week 0 module on Quercus.
+Further information and instructions for using Rstudio in JupyterHub can found in the Week 0 module on Canvas
 
 ---
 
@@ -43,7 +43,7 @@ You should now see "[1] 2" below the code chunk. This is the *output* of the cod
 
 How do we interpret the output? In R, the output value appears to the right of a number in square brackets. Here, the [1] indicates that this is the first value that is returned (in this case, the number 2). For the first two weeks of this course, all of the code that is executed will only return one value. In week 3 we will learn about working with multiple values at once. Therefore, until week 3 all of the output you generate will start with "[1]", which can be ignored for now.
 
-Throughout these lecture supplements you will find written portions mixed with code chunks. Execute the code chunks as you go through the tutorials to follow along. 
+Throughout these lecture supplements you will find written portions mixed with code chunks. Execute the code chunks as you go through the supplements to follow along. 
 
 **Formatting notes:**
 
@@ -107,7 +107,7 @@ What do you expect the return value(s) will be for the next code chunk?
 1 + 1 # + 2
 ```
 
-Of course, this would be different if we removed all the #:
+Of course, this would be different if we removed all the `#`s:
 
 ```{r}
 3 + 3
@@ -143,7 +143,8 @@ In R, just like in regular math, certain parts of an equation are calculated (ex
   Addition & subtraction:       `+` & `-`
 *Lowest precedence
 
-Multiplication takes precedence over addition. Therefore, the calculation below will return the number 14.      4 + 2 * 5 = 4 + 10 = 14
+Multiplication takes precedence over addition. Therefore, the calculation below will return the number 14.      
+4 + 2 * 5 = 4 + 10 = 14
 
 ```{r}
 4 + 2 * 5
@@ -181,9 +182,9 @@ However, this executes the division before the calculation because the division 
 
 Make sure to double check your calculations so that the code you write will be executed in the order you intend.
 
-Mathematical operators within exponents require brackets. For exmaple, calculate the result of *a* to the power of *b* divided by *c*, where *a* = 100, *b* = 2, *c* = 5. 
+Mathematical operators within exponents require brackets. For example, calculate the result of *a* to the power of *b* divided by *c*, where *a* = 100, *b* = 2, *c* = 5. 
 
-b/c must be placed within brackets so that R will execute the division before the exponentiation (which has a higher precedence). If we do not use brackets, we get a different answer. 
+*b/c* must be placed within brackets so that R will execute the division before the exponentiation (which has a higher precedence). If we do not use brackets, we get a different answer. 
 
 ```{r}
 100 ^ 2 / 5
