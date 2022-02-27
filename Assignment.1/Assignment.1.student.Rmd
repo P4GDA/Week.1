@@ -1,5 +1,5 @@
 ---
-title: "Week 1 Assignment"
+title: "Assignment 1"
 output: html_document
 ---
 
@@ -24,14 +24,25 @@ This assignment covers the content in week 1 lectures and tutorials.
 - Question 2 (6 marks)
 - Question 3 (6 marks)
 
-Note that when a question asks you to assign a value to a variable, you must use the exact variable name to get the marks for the question. The question will provide the variable name in quotation marks, although the variable in your code should not have quotation marks around it. For example, view the following and question and answer:
+---
+
+*IMPORTANT NOTE*
+When a question asks you to assign a value to a variable, you must use the exact variable name to get the marks for the question. The question will provide the variable name in quotation marks, although the variable in your code should not have quotation marks around it. For example, view the following and question and answer:
 
 Assign the result of the calculation 1 + 1 to a variable named "q.9".
 
-```{r}
+```{r Assignment.W1.1.example}
 # Write and execute your code here
 q.9 <- 1 + 1
+
 ```
+
+```{r}
+. = ottr::check("tests/Assignment.W1.example.R")
+```
+**IGNORE the above block: test results will not appear in assignments** 
+
+Also note that you will not be able to see Otter Grader tests results for questions in assignments. If you try to run the test code block you will get an error, so it is fine to ignore these blocks.
 
 ---
 
