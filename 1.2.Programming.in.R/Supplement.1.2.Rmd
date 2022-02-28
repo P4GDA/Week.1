@@ -46,11 +46,10 @@ How do we interpret the output? In R, the output value appears to the right of a
 Throughout these lecture supplements you will find written portions mixed with code chunks. Execute the code chunks as you go through the supplements to follow along. 
 
 **Formatting notes:**
-
-* Sections of the supplement are broken up by three hyphens (---)
-* Each lecture video will have a corresponding section
-* Each major topic within a video will have subsection
-* Anything outside of a code chunk contained with back ticks (``) is intended to represent code. For example:
+- Sections of the supplement are broken up by three hyphens (---)
+- Each lecture video will have a corresponding section
+- Each major topic within a video will have subsection
+- Anything outside of a code chunk contained with back ticks (``) is intended to represent code. For example:
       `1 + 1`
 
 ---
