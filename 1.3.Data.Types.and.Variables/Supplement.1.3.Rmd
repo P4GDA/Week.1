@@ -35,11 +35,11 @@ Each data type has its own uses and syntax, which will be explored individually.
 Character type values are text values. Words, phrases, and sentences in R are character type.
 
 Character type values can contain:
-* Letters
-* Numbers
-* Spaces
-* Punctuation marks
-* Other symbols on your keyboard: $, %, #, *, ~, etc.
+- Letters
+- Numbers
+- Spaces
+- Punctuation marks
+- Other symbols on your keyboard: $, %, #, *, ~, etc.
 
 Character type values must always be enclosed in double quotation marks "". 
 
@@ -82,11 +82,10 @@ Instead we can use single quotations within the double quotations of the charact
 ```
 
 Character values are used for all text values in R. Here are a few examples of character value uses in bioinformatic analysis:
-
-* Sample descriptions   `“EGH1 deletion mutant”`
-* Cell types            `“HEK293”`
-* Gene names            `“TP53”`
-* Patient cancer type   `“pancreatic, stage III”`
+- Sample descriptions   `“EGH1 deletion mutant”`
+- Cell types            `“HEK293”`
+- Gene names            `“TP53”`
+- Patient cancer type   `“pancreatic, stage III”`
 
 ---
 
@@ -99,10 +98,10 @@ Character values are used for all text values in R. Here are a few examples of c
 Numeric type values (also referred to as "double" type) are real numbers. 
 
 Numeric type values can contain:
-* Numbers: 0-9
-* A single period to indicate a decimal point
-* A single hyphen at the front to indicate a negative number
-* The letter “e” and a "+" sign to indicate “10 to the power of”
+- Numbers: 0-9
+- A single period to indicate a decimal point
+- A single hyphen at the front to indicate a negative number
+- The letter “e” and a "+" sign to indicate “10 to the power of”
 
 This is the type of value we were using in the math portion of the 1.2 module. Let's look at a few more examples.
 
@@ -147,11 +146,10 @@ As was mentioned earlier, different operations can be performed on different dat
 Although the code in the previous code chunk throws an error, there were no warnings from RStudio that there is a mistake in the code. RStudio will not catch every error before it happens.
 
 Numeric values have numerous applications in bioinformatic analysis. Any number resulting from an analysis will be used as a numeric value in R. Here are a few examples:
-
-* Concentrations            `10 # mol/L`
-* Population growth rate    `0.237 # per year`
-* Gene expression level     `39.01 # TPM`
-* Patient age               `89 # years old`
+- Concentrations            `10 # mol/L`
+- Population growth rate    `0.237 # per year`
+- Gene expression level     `39.01 # TPM`
+- Patient age               `89 # years old`
 
 Note that the units of each numeric type value were shown as a comment after the value. Units cannot be stored within a value, however a comment after the value with the units can be a useful reminder when reviewing code.
 
@@ -193,11 +191,10 @@ F
 Note, however, that the output of `T` and `F` are `TRUE` and `FALSE`.
 
 Logical type values may not seem particularly useful now, but we will learn more about their uses next week in modules 2.2 and 2.3. Logical values are used in binary situations. Some examples of binary situations you may encounter in bioinformatics include:
-
-* Mouse sex (male/female)
-* Test positivity (pass/fail)
-* Protein interactions (interact/don't interact)
-* Patient in remission (yes/no)
+- Mouse sex (male/female)
+- Test positivity (pass/fail)
+- Protein interactions (interact/don't interact)
+- Patient in remission (yes/no)
 
 ---
 
@@ -326,14 +323,14 @@ You might have noticed two things about variable names in the previous examples:
   2. Variable names do not contain spaces.
   
 Variable names cannot have quotation marks or spaces. They must only include:
-* letters
-* numbers
-* underscores
-* periods
+- letters
+- numbers
+- underscores
+- periods
 
 Variable names *cannot*:
-* Contain spaces or any special characters
-* Start with a number, underscore, or a period followed by a number
+- Contain spaces or any special characters
+- Start with a number, underscore, or a period followed by a number
 
 Because of this, it is best to always start your variable name with a letter so that you know it will be valid.
 
@@ -346,10 +343,10 @@ Here is an example of an invalid variable name:
 If you use an invalid variable name, R will throw an error to let you know, and depending on what mistake you are making it will warn you about it before execution, as above.
 
 Instead, you could name the variable:
-* number_of_new_patients_2021
-* num_new_patients_2021
-* NewPatientsCount2021
-* new.patients.2021
+- number_of_new_patients_2021
+- num_new_patients_2021
+- NewPatientsCount2021
+- new.patients.2021
 
 There are many other valid names; these are just a few examples.
 
@@ -368,11 +365,11 @@ It is important to be descriptive when creating variable names so that we can re
 Note that when you looked the variable names above, even though you were never told what it was supposed to represent, you probably realized that the value stored in the variable represents that there were 129 new patients in 2021.
 
 Here are a few examples of names for the variable that would not have been easy to figure out:
-* np2021
-* new_p_2021
-* n_patient_21
-* patients_21
-* newpat21
+- np2021
+- new_p_2021
+- n_patient_21
+- patients_21
+- newpat21
 
 Although these are bad names for human readability, they are not invalid variable names (no spaces or special characters, and they all start with a letter). So R would not throw an error if you used one of these names. Choosing a good variable name is important for the user.
 
