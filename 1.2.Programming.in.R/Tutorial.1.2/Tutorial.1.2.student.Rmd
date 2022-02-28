@@ -65,10 +65,10 @@ Use the following formula to calculate the volume of the initial solution requir
 V1 = (C2 x V2)/C1
 
 Where:
-* C1 is the initial concentration (M)
-* V1 is the initial volume (mL)
-* C2 is the final concentration (M)
-* V2 is the final volume (mL)
+- C1 is the initial concentration (M)
+- V1 is the initial volume (mL)
+- C2 is the final concentration (M)
+- V2 is the final volume (mL)
 
 From this point, all questions in tutorials will be followed by a code block containing the comment "# Write and execute your code here" to indicate that you should write code in the code block below the comment, like this:
 
@@ -82,8 +82,8 @@ Calculate the number of moles in the resulting 2 M NaOH solution.
 n = M × V
 
 Where:
-* M is molarity (mol/L)
-* V is volume (L)
+- M is molarity (mol/L)
+- V is volume (L)
 
 Note the volume is in litres (L) in the formula above, but the volume you need to use is in mL (150 mL), so you will need to include a conversion in your code (150 / 1000).
 
@@ -97,8 +97,8 @@ NaOH has a molecular weight of 39.997 Daltons (g/mol). Calculate the grams of Na
 m = n x w
 
 Where:
-* n is moles (mol)
-* w is molecular weight (g/mol)
+- n is moles (mol)
+- w is molecular weight (g/mol)
 
 ```{r}
 # Write and execute your code here
@@ -110,8 +110,8 @@ Calculate the number of atoms in the resulting solution. (n = result of an earli
 a = n x Avogadro's number
 
 Where:
-* n is moles (mol)
-* Avogadro's number is 6.022 x 10^23 (atoms/mol)
+- n is moles (mol)
+- Avogadro's number is 6.022 x 10^23 (atoms/mol)
 
 Hint: n is the result of an earlier calculation (mol).
 
